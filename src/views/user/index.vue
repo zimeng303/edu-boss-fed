@@ -1,18 +1,13 @@
 <template>
-  <div id="app">
-    <!-- 根路由出口 -->
-    <router-view />
-  </div>
+  <div class="user">用户管理</div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-
 export default Vue.extend({
-  name: 'App'
+  name: 'UserIndex'
 })
 </script>
 
 <style lang="scss" scoped>
-
 </style>

@@ -3,16 +3,25 @@ module.exports = {
   env: {
     node: true
   },
+  // 使用插件的编码校验规则
   extends: [
-    'plugin:vue/essential',
-    '@vue/standard',
-    '@vue/typescript/recommended'
+    'plugin:vue/essential', // eslint-plugin-vue
+    '@vue/standard',        // @vue/eslint-config-standard
+    '@vue/typescript/recommended' // @vue/eslint-config-typescript
   ],
   parserOptions: {
     ecmaVersion: 2020
   },
+  // 自定义编码校验规则
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    // 'semi': ['off', 'always']
+    '@typescript-eslint/member-delimiter-style': ['error', {
+      "multiline": {
+        "delimiter": "none",
+        "requireLast": true
+      }
+    }]
   }
 }
