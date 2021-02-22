@@ -6,7 +6,7 @@ module.exports = {
   // 使用插件的编码校验规则
   extends: [
     'plugin:vue/essential', // eslint-plugin-vue
-    '@vue/standard',        // @vue/eslint-config-standard
+    '@vue/standard', // @vue/eslint-config-standard
     '@vue/typescript/recommended' // @vue/eslint-config-typescript
   ],
   parserOptions: {
@@ -18,9 +18,9 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     // 'semi': ['off', 'always']
     '@typescript-eslint/member-delimiter-style': ['error', {
-      "multiline": {
-        "delimiter": "none",
-        "requireLast": true
+      multiline: {
+        delimiter: 'none',
+        requireLast: true
       }
     }]
   }
