@@ -34,6 +34,7 @@ export const getRoleById = (id: string | number) => {
   })
 }
 
+// 获取所有角色
 export const getAllRoles = () => {
   return request({
     method: 'GET',
@@ -41,6 +42,7 @@ export const getAllRoles = () => {
   })
 }
 
+// 给用户分配角色
 export const allocateUserRoles = (data: any) => {
   return request({
     method: 'POST',
@@ -49,6 +51,7 @@ export const allocateUserRoles = (data: any) => {
   })
 }
 
+// 查询用户角色
 export const getUserRoles = (userId: string | number) => {
   return request({
     method: 'GET',

@@ -125,11 +125,9 @@ export default Vue.extend({
       isEdit: false
     }
   },
-
   created () {
     this.loadRoles()
   },
-
   methods: {
     async loadRoles () {
       this.loading = true
@@ -137,17 +135,14 @@ export default Vue.extend({
       this.roles = data.data.records
       this.loading = false
     },
-
     onSubmit () {
       this.loadRoles()
     },
-
     handleEdit (role: any) {
       this.dialogVisible = true
       this.roleId = role.id
       this.isEdit = true
     },
-
     async handleDelete (role: any) {
       try {
         await this.$confirm(`确认删除角色：${role.name}？`, '删除提示')
@@ -162,17 +157,14 @@ export default Vue.extend({
         }
       }
     },
-
     onReset () {
       (this.$refs.form as Form).resetFields()
       this.loadRoles()
     },
-
     onSuccess () {
       this.dialogVisible = false // 关闭对话框
       this.loadRoles() // 重新加载数据列表
     },
-
     handleAdd () {
       this.isEdit = false
       this.dialogVisible = true

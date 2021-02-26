@@ -36,7 +36,7 @@
         <el-button type="default">资源分类</el-button>
       </div>
       <el-table
-        :data="resour ces"
+        :data="resources"
         v-loading="isLoading"
         style="width: 100%; margin-bottom: 20px;">
         <el-table-column
