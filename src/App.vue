@@ -2,6 +2,7 @@
   <div id="app">
     <!-- 根路由出口 -->
     <router-view />
+    <a href="http://edufront.lagou.com/front/">ccc</a>
   </div>
 </template>
 
